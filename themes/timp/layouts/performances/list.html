@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="section">
+  <h3>Upcoming Performances</h3>
+
+  {{ $listHasItems := false }}
+  {{ range (.Data.Pages.ByParam "eventdate") }}
+    {{$date := time .Params.eventdate}}
+    {{ if ge $date.Unix now.Unix }}
+      {{ $listHasItems = true }}
+      {{ partial "performancecard.html" . }}
+    {{ end }}
+  {{ end }}
+  {{ if not $listHasItems }}
+    <p>No performances found</p>
+  {{ end }}
+</div>
+<div class="section">
+  <h3>Previous Performances</h3>
+
+  {{ $listHasItems = false }}
+  {{ range (.Data.Pages.ByParam "eventdate").Reverse }}
+    {{$date := time .Params.eventdate}}
+    {{ if lt $date.Unix now.Unix }}
+      {{ $listHasItems = true }}
+      {{ partial "performancecard.html" . }}
+    {{ end }}
+  {{ end }}
+  {{ if not $listHasItems }}
+    <p>No performances found</p>
+  {{ end }}
+</div>
+{{ end }}

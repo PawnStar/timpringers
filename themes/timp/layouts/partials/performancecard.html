@@ -1,0 +1,3 @@
+{{$date := time .Params.eventdate}}
+<h4>{{ .Title }}</h4>
+<p>{{ $date.Format "Mon Jan 2 15:04:05 -0700 MST 2006" }}</p>
