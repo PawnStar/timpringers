@@ -20,4 +20,5 @@ fields:
   label: Description
   description: Any additional details about the perfomance
 pages:
+- content/performances/other-performanc.md
 - content/performances/test-performance.md
