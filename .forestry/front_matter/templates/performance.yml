@@ -1,0 +1,21 @@
+---
+label: Performance
+hide_body: false
+is_partial: false
+fields:
+- type: datetime
+  name: date
+  label: Date
+  description: Time and date of performance
+  config:
+    required: true
+- type: text
+  label: Location
+  name: location
+  description: Location of the performance
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: Any additional details about the perfomance
