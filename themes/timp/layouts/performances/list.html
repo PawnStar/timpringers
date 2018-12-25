@@ -5,10 +5,12 @@
   {{ $listHasItems := false }}
   {{ range (.Data.Pages.ByParam "eventdate") }}
     {{$date := time .Params.eventdate}}
-    {{ if ge $date.Unix now.Unix }}
-      {{ $listHasItems = true }}
-      {{ partial "performancecard.html" . }}
-    {{ end }}
+    {{ if eq (printf "%T" $date) "time.Time"}}
+      {{ if ge $date.Unix now.Unix }}
+        {{ $listHasItems = true }}
+        {{ partial "performancecard.html" . }}
+      {{ end }}
+    {{ end }} 
   {{ end }}
   {{ if not $listHasItems }}
     <p>No performances found</p>
@@ -20,9 +22,11 @@
   {{ $listHasItems = false }}
   {{ range (.Data.Pages.ByParam "eventdate").Reverse }}
     {{$date := time .Params.eventdate}}
-    {{ if lt $date.Unix now.Unix }}
-      {{ $listHasItems = true }}
-      {{ partial "performancecard.html" . }}
+    {{ if eq (printf "%T" $date) "time.Time"}}
+      {{ if lt $date.Unix now.Unix }}
+        {{ $listHasItems = true }}
+        {{ partial "performancecard.html" . }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ if not $listHasItems }}
