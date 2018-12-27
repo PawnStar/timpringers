@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://pawnstar.github.io/timpringers"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "timp"
