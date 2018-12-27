@@ -1,3 +1,14 @@
 {{$date := time .Params.eventdate}}
-<h4>{{ .Title }}</h4>
-<p>{{ $date.Format "Mon Jan 2 15:04:05 -0700 MST 2006" }}</p>
+<div class="performanceCard">
+  <h4>{{ .Title }}</h4>
+  <p><i class="far fa-clock"></i>{{ $date.Format "Mon Jan 2 3:04 PM" }}</p>
+  <p>
+    <i class="far fa-map"></i>
+    {{ if not .Params.mapURL }}
+      {{ .Params.location }}
+    {{ else }}
+      <a class="mapLink" href="{{.Params.mapURL}}">{{.Params.location}}</a>
+    {{ end }}
+  </p>
+  <p class="focus">{{.Params.description}}</p>
+</div>

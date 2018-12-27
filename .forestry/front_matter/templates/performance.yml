@@ -13,6 +13,10 @@ fields:
   label: Location
   name: location
   description: Location of the performance
+- type: text
+  label: Map URL
+  name: mapURL
+  description: Google Maps Link for the performance location
   config:
     required: true
 - type: text

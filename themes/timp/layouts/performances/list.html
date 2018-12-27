@@ -1,36 +1,40 @@
 {{ define "main" }}
-<div class="section">
+<div class="listSection">
   <h3>Upcoming Performances</h3>
 
   {{ $listHasItems := false }}
-  {{ range (.Data.Pages.ByParam "eventdate") }}
-    {{$date := time .Params.eventdate}}
-    {{ if eq (printf "%T" $date) "time.Time"}}
-      {{ if ge $date.Unix now.Unix }}
-        {{ $listHasItems = true }}
-        {{ partial "performancecard.html" . }}
-      {{ end }}
-    {{ end }} 
-  {{ end }}
+  <div>
+    {{ range (.Data.Pages.ByParam "eventdate") }}
+      {{$date := time .Params.eventdate}}
+      {{ if eq (printf "%T" $date) "time.Time"}}
+        {{ if ge $date.Unix now.Unix }}
+          {{ $listHasItems = true }}
+          {{ partial "performancecard.html" . }}
+        {{ end }}
+      {{ end }} 
+    {{ end }}
+  </div>
   {{ if not $listHasItems }}
-    <p>No performances found</p>
+    <p style="text-align: center">No performances found</p>
   {{ end }}
 </div>
-<div class="section">
+<div class="listSection">
   <h3>Previous Performances</h3>
 
   {{ $listHasItems = false }}
-  {{ range (.Data.Pages.ByParam "eventdate").Reverse }}
-    {{$date := time .Params.eventdate}}
-    {{ if eq (printf "%T" $date) "time.Time"}}
-      {{ if lt $date.Unix now.Unix }}
-        {{ $listHasItems = true }}
-        {{ partial "performancecard.html" . }}
+  <div>
+    {{ range (.Data.Pages.ByParam "eventdate").Reverse }}
+      {{$date := time .Params.eventdate}}
+      {{ if eq (printf "%T" $date) "time.Time"}}
+        {{ if lt $date.Unix now.Unix }}
+          {{ $listHasItems = true }}
+          {{ partial "performancecard.html" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}
+  </div>
   {{ if not $listHasItems }}
-    <p>No performances found</p>
+    <p style="text-align: center">No performances found</p>
   {{ end }}
 </div>
 {{ end }}
