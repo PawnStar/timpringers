@@ -1,0 +1,124 @@
+body {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+#header h1 {
+  display:block;
+  max-width: 1000px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 600;
+}
+
+#header h1 a {
+  display: inline-block;
+}
+
+#header h1 .header__small{
+  font-family: 'Cinzel', cursive;
+  font-size: 24px;
+  display: block;
+  font-weight: 400;
+  color: #474747;
+}
+
+#header nav {
+  position: relative;
+  background: #212121;
+}
+
+#header nav::after {
+  top: initial;
+  bottom: 0;
+}
+
+#header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0px;
+}
+
+#header nav li {
+  list-style: none;
+  font-family: 'Cinzel', cursive;
+  font-size: 24px;
+  margin: 0px 20px;
+}
+
+#header nav li a {
+  padding: 10px 20px;
+  color: white;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+}
+
+#content {
+  flex: 1;
+  background: #303030;
+  color: white;
+}
+
+#content > div {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+#content p {
+  opacity: .7;
+}
+
+.listSection > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.performanceCard {
+  flex: 0;
+  width: 33%;
+  margin: 0 15px;
+  margin-bottom: 30px;
+  padding: 14px;
+  min-width: 200px;
+  background: rgb(83, 83, 83);
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+.performanceCard > h4:first-child{
+  margin-top: 0px;
+}
+
+.performanceCard p a.mapLink {
+  color: white;
+}
+
+#content .performanceCard p.focus {
+  opacity: .85;
+  font-style: italic;
+}
+
+#content .performanceCard i.far {
+  display: inline-block;
+  margin-right: 8px;
+}
