@@ -1,4 +1,4 @@
-baseURL = "http://timpanogosringers.org"
+baseURL = "https://timpanogosringers.org"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "timp"
