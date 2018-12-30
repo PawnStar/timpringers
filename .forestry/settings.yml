@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: true
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: document
   path: content/_index.md
@@ -28,7 +28,7 @@ sections:
   path: content/donors.md
   label: Donors Page
 upload_dir: static/uploads
-public_path: "/uploads"
+public_path: "/timpringers/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
