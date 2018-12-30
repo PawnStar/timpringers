@@ -13,6 +13,12 @@
   </url>
   
   <url>
+    <loc>https://pawnstar.github.io/timpringers/</loc>
+    <lastmod>2018-12-04T19:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://pawnstar.github.io/timpringers/performances/</loc>
     <lastmod>2018-12-04T19:57:00+00:00</lastmod>
     <priority>0</priority>
@@ -29,11 +35,6 @@
   
   <url>
     <loc>https://pawnstar.github.io/timpringers/performances/test-performance/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pawnstar.github.io/timpringers/</loc>
-    <lastmod>2018-12-04T19:57:00+00:00</lastmod>
   </url>
   
 </urlset>
