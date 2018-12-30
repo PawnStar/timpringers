@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: content/_index.md
-  label: Home
+  label: Home Page
 - type: directory
   path: content/performances
   label: Performances
