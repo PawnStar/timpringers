@@ -5,6 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
   path: content/performances
   label: Performances
   create: documents
@@ -12,10 +17,12 @@ sections:
   templates:
   - performance
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+  path: content/photos
+  label: Gallery
+  create: documents
+  match: "**/*"
+  templates:
+  - gallery-photo
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
