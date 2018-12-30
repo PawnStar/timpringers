@@ -1,0 +1,24 @@
+---
+label: Gallery Photo
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Image name
+  name: image_name
+  description: Title that summarizes what the image is of
+  config:
+    required: true
+- type: textarea
+  name: image_description
+  label: Image description
+  description: Caption to be shown alongside the image in the gallery
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: image
+  label: Image
+  description: Image to be shown in gallery
