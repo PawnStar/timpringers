@@ -21,6 +21,14 @@ sections:
   match: "**/*"
   templates:
   - gallery-photo
+- type: document
+  path: content/ringers.md
+  label: Ringers
+  match: "**/*"
+- type: document
+  path: content/donors.md
+  label: Donors
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
