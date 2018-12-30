@@ -2,6 +2,4 @@
 title: Timp Ringers
 
 ---
-Test content
-
-Paragraph added from forestry
+Keep up to date with all our concerts!
