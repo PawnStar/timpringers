@@ -23,10 +23,10 @@ sections:
   - gallery-photo
 - type: document
   path: content/ringers.md
-  label: Ringers
+  label: Ringers Page
 - type: document
   path: content/donors.md
-  label: Donors
+  label: Donors Page
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
