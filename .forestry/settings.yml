@@ -28,7 +28,7 @@ sections:
   path: content/donors.md
   label: Donors Page
 upload_dir: static/uploads
-public_path: "/timpringers/uploads"
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
