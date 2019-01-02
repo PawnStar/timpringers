@@ -8,6 +8,13 @@ sections:
   path: content/_index.md
   label: Home Page
 - type: directory
+  path: content/slider
+  label: Home page Slider
+  create: documents
+  match: "**/*"
+  templates:
+  - frontpage-banner
+- type: directory
   path: content/performances
   label: Performances
   create: documents
