@@ -1,0 +1,31 @@
+---
+label: Homepage
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  label: Page Banner
+  name: banner
+  description: Configure the landing page banner
+  fields:
+  - type: boolean
+    name: show_banner
+    label: Show Banner
+    description: Enable or disable the home page banner
+    default: false
+  - type: text
+    name: heading
+    label: Heading
+    description: Title for the landing page banner section
+  - type: textarea
+    name: description
+    label: Blurb
+    description: Small paragraph of text in the banner
+  - type: file
+    name: banner_logo
+    label: Image
+    description: Image to be displayed in the side of the banner
+- type: blocks
+  name: sidebar
+  label: Sidebar
+  description: Configure entries in the sidebar
