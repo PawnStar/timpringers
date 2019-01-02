@@ -77,7 +77,7 @@ h3 {
   color: white;
 }
 
-#content > div {
+#content > div:not(#homeBanner) {
   max-width: 800px;
   width: 100%;
   margin: 0px auto;
@@ -123,7 +123,7 @@ h3 {
   margin-right: 8px;
 }
 
-#content p > img {
+#content div:not(#homeBanner) p > img {
   max-width: 50%;
   min-width: 300px;
   display: block;
@@ -132,4 +132,8 @@ h3 {
   border-radius: 1px;
   background: white;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+#content #homeBanner {
+  width: 100%;
 }
