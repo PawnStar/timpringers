@@ -1,0 +1,29 @@
+---
+label: FrontPage Banner
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+  description: Header to be shown in slider
+- type: textarea
+  label: Blurb
+  name: blurb
+  description: Small text block shown in slider
+  config:
+    required: true
+- type: select
+  config:
+    source:
+      type: pages
+    required: true
+  label: Link
+  name: linklink
+  description: Page or performance to link to in slider
+- type: file
+  name: background
+  label: Background
+  description: Background image for slider pane
