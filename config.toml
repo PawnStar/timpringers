@@ -2,3 +2,26 @@ baseURL = "https://timpanogosringers.org"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "timp"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Donate"
+    name = "Donate"
+
+  [[menu.main]]
+    identifier = "DonateLink"
+    name = "Help us"
+    parent = "Donate"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about hugo"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+
+  [[menu.main]]
+    name = "getting started"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"

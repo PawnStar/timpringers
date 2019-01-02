@@ -71,13 +71,13 @@ h3 {
   color: black;
 }
 
-#content {
+#vertFlexContent {
   flex: 1;
   background: #303030;
   color: white;
 }
 
-#content > div:not(#homeBanner) {
+#vertFlexContent > div {
   max-width: 800px;
   width: 100%;
   margin: 0px auto;
@@ -94,7 +94,7 @@ h3 {
   align-content: flex-start;
 }
 
-.performanceCard {
+#content .performanceCard {
   flex: 0;
   width: 33%;
   margin: 0 15px;
@@ -113,17 +113,17 @@ h3 {
   color: white;
 }
 
-#content .performanceCard p.focus {
+.performanceCard p.focus {
   opacity: .85;
   font-style: italic;
 }
 
-#content .performanceCard i.far {
+.performanceCard i.far {
   display: inline-block;
   margin-right: 8px;
 }
 
-#content div:not(#homeBanner) p > img {
+#content p > img {
   max-width: 50%;
   min-width: 300px;
   display: block;
@@ -134,6 +134,55 @@ h3 {
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 }
 
-#content #homeBanner {
+#homeBanner {
   width: 100%;
+}
+
+#indexFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar{
+  width: 179px;
+  border-right: solid 1px white;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+#sidebar > :first-child{
+  margin-top: 0px;
+}
+
+.indexFlexContent {
+  flex: 1;
+}
+
+#sidebar .performanceCard {
+  margin-left: 20px;
+}
+
+#sidebar .performanceCard h4 {
+  display: none;
+}
+
+#sidebar .performanceCard p {
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+#sidebar h3 i {
+  display: inline-block;
+  transform: rotate(-35deg);
+  margin-right: 8px;
+}
+
+#sidebar #donate {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#sidebar a {
+  color: rgb(224, 224, 224);
 }

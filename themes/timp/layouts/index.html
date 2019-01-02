@@ -5,6 +5,10 @@
 {{ end }}
 
 {{ define "main" }}
-  {{- partial "sidebar.html" . -}}
-  {{ .Content }}
+  <div id="indexFlex">
+    {{- partial "sidebar.html" . -}}
+    <div id="content" class="indexFlexContent">
+      {{ .Content }}
+    </div>
+  </div>
 {{ end }}

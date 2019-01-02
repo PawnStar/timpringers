@@ -1,0 +1,23 @@
+<!-- sidebar start -->
+<aside id="sidebar">
+  <h3><i class="far fa-bell"></i>Next Concert</h3>
+  {{ range (.Data.Pages.ByParam "eventdate") }}
+    {{$date := time .Params.eventdate}}
+    {{ if eq (printf "%T" $date) "time.Time"}}
+      {{ if ge $date.Unix now.Unix }}
+        {{ partial "performancecard.html" . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  <h3><i class="far fa-bell"></i>Donate</h3>
+  <div id="donate">
+    <p>
+      The Timpanogos Ringers are a community bell-choir and are always
+      looking for those who are willing and able to assist us financially.
+    </p>
+    <p>
+      To donate yourself, or to see the many fine people who have donated
+      to us before, see the <a href="/donors">Donors</a> page.
+    </p>
+  </div>
+</aside>
