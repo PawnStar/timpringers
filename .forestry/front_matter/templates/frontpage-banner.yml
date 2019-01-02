@@ -23,6 +23,7 @@ fields:
   label: Link
   name: linklink
   description: Page or performance to link to in slider
+  default: donors.md
 - type: file
   name: background
   label: Background
