@@ -11,14 +11,14 @@
           {{ $listHasItems = true }}
           {{ partial "performancecard.html" . }}
         {{ end }}
-      {{ end }} 
+      {{ end }}
     {{ end }}
   </div>
   {{ if not $listHasItems }}
     <p style="text-align: center">No performances found</p>
   {{ end }}
 </div>
-<div class="listSection">
+<!-- <div class="listSection">
   <h3>Previous Performances</h3>
 
   {{ $listHasItems = false }}
@@ -36,5 +36,5 @@
   {{ if not $listHasItems }}
     <p style="text-align: center">No performances found</p>
   {{ end }}
-</div>
+</div> -->
 {{ end }}

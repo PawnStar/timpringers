@@ -123,7 +123,7 @@ h3 {
   margin-right: 8px;
 }
 
-#content p > img {
+#content p > img, .photos img {
   max-width: 50%;
   min-width: 300px;
   display: block;
@@ -132,4 +132,40 @@ h3 {
   border-radius: 1px;
   background: white;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+.donorColumns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.donorColumns p {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#content p.opaque {
+  opacity: 1;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos img {
+  display: inline-block;
+  margin: 10px;
+  max-width: initial;
+  width: 360px;
+  min-width: initial;
+  height: auto;
 }
