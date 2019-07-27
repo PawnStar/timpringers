@@ -27,7 +27,6 @@ sections:
 - type: document
   path: content/audition.md
   label: Autitions Page
-  match: "**/*"
 - type: document
   path: content/donors.md
   label: Donors Page
