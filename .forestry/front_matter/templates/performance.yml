@@ -22,5 +22,3 @@ fields:
   name: description
   label: Description
   description: Any additional details about the perfomance
-pages:
-- content/performances/other-performanc.md
