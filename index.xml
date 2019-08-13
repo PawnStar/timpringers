@@ -6,28 +6,9 @@
     <description>Recent content in Timp Ringers on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Apr 2019 19:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://timpanogosringers.org/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>April 19th</title>
-      <link>https://timpanogosringers.org/performances/2019-feb-19/</link>
-      <pubDate>Fri, 19 Apr 2019 19:30:00 +0000</pubDate>
-      
-      <guid>https://timpanogosringers.org/performances/2019-feb-19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Other Performanc</title>
-      <link>https://timpanogosringers.org/performances/other-performanc/</link>
-      <pubDate>Tue, 04 Dec 2018 19:57:00 +0000</pubDate>
-      
-      <guid>https://timpanogosringers.org/performances/other-performanc/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Donors</title>
@@ -73,15 +54,6 @@ There is an $85 participation fee to help cover the choir&amp;rsquo;s equipment 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timpanogosringers.org/photos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ring in the new year!</title>
-      <link>https://timpanogosringers.org/performances/upcoming-performance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timpanogosringers.org/performances/upcoming-performance/</guid>
       <description></description>
     </item>
     
